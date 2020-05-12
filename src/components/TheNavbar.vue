@@ -3,7 +3,7 @@
     <v-toolbar color="background-color" dark flat class=" d-sm-flex d-md-none">
       <v-app-bar-nav-icon
         text-color--text
-        @click="drawer"
+        @click.stop="drawer"
         class=" text-color--text"
       ></v-app-bar-nav-icon>
       <v-toolbar-title>Menu</v-toolbar-title>
