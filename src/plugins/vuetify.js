@@ -12,7 +12,7 @@ export default new Vuetify({
         secondary: colors.red.lighten4, // #FFCDD2
         accent: colors.indigo.base, // #3F51B5
         "background-color": colors.lightBlue.darken4, // #01579B
-        "text-color": colors.grey.lighten4 // grey lighten-4
+        "text-color": colors.grey.lighten2 // #E0E0E0
       },
     },
   }
