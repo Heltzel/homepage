@@ -1,6 +1,7 @@
 <template>
-  <div class="home">
+  <div class="home text-color--text background-color" color="background-color">
     Home
+    
   </div>
 </template>
 
