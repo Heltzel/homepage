@@ -11,17 +11,26 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      title: 'Marc Heltzel - Home'
+    }
   },
   {
     path: "/contact",
     name: "Contact",
     component: Contact,
+    meta: {
+      title: 'Marc Heltzel - Contact'
+    }
   },
 
   {
     path: "/about",
     name: "About",
     component: About,
+    meta: {
+      title: 'Marc Heltzel - About'
+    }
   },
 ];
 

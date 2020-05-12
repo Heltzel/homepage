@@ -6,9 +6,15 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 
+
 new Vue({
   router,
   store,
   vuetify,
+  watch: {
+  '$route'(to, from) {
+    document.title = to.meta.title || 'Homepage Marc Heltzel'
+  }
+},
   render: h => h(App)
 }).$mount('#app')
