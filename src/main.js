@@ -1,20 +1,21 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import vuetify from './plugins/vuetify';
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import vuetify from "./plugins/vuetify";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
+export const bus = new Vue();
 
 new Vue({
   router,
   store,
   vuetify,
   watch: {
-  '$route'(to, from) {
-    document.title = to.meta.title || 'Homepage Marc Heltzel'
-  }
-},
-  render: h => h(App)
-}).$mount('#app')
+    $route(to, from) {
+      document.title = to.meta.title || "Homepage Marc Heltzel";
+    },
+  },
+  render: (h) => h(App),
+}).$mount("#app");
